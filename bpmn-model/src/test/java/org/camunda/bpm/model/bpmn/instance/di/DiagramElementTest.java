@@ -14,6 +14,7 @@
 package org.camunda.bpm.model.bpmn.instance.di;
 
 import org.camunda.bpm.model.bpmn.instance.BpmnModelElementInstanceTest;
+import org.junit.Ignore;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -23,6 +24,7 @@ import static org.camunda.bpm.model.bpmn.impl.BpmnModelConstants.DI_NS;
 /**
  * @author Sebastian Menski
  */
+@Ignore
 public class DiagramElementTest extends BpmnModelElementInstanceTest {
 
   public TypeAssumption getTypeAssumption() {

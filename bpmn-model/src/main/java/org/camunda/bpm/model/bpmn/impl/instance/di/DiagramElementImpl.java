@@ -26,6 +26,7 @@ import org.camunda.bpm.model.xml.type.child.SequenceBuilder;
 import static org.camunda.bpm.model.bpmn.impl.BpmnModelConstants.DI_ATTRIBUTE_ID;
 import static org.camunda.bpm.model.bpmn.impl.BpmnModelConstants.DI_ELEMENT_DIAGRAM_ELEMENT;
 import static org.camunda.bpm.model.bpmn.impl.BpmnModelConstants.DI_NS;
+import static org.camunda.bpm.model.bpmn.impl.BpmnModelConstants.BPMNDI_NS;
 
 /**
  * The DI DiagramElement element
@@ -39,11 +40,11 @@ public abstract class DiagramElementImpl extends BpmnModelElementInstanceImpl im
 
   public static void registerType(ModelBuilder modelBuilder) {
     ModelElementTypeBuilder typeBuilder = modelBuilder.defineType(DiagramElement.class, DI_ELEMENT_DIAGRAM_ELEMENT)
-      .namespaceUri(DI_NS)
+      .namespaceUri(BPMNDI_NS)
       .abstractType();
 
     idAttribute = typeBuilder.stringAttribute(DI_ATTRIBUTE_ID)
-      .namespace(DI_NS)
+      .namespace(BPMNDI_NS)
       .idAttribute()
       .build();
 
