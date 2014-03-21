@@ -43,12 +43,12 @@ public class PointImpl extends BpmnModelElementInstanceImpl implements Point {
       });
 
     xAttribute = typeBuilder.doubleAttribute(DC_ATTRIBUTE_X)
-      .namespace(DC_NS)
+     // .namespace("")
       .required()
       .build();
 
     yAttribute = typeBuilder.doubleAttribute(DC_ATTRIBUTE_Y)
-      .namespace(DC_NS)
+     // .namespace("")
       .required()
       .build();
 
